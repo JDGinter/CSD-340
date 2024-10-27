@@ -1,2 +1,7 @@
 # CSD-340
- Jeremy Ginter's repository for CSD 340: Web Development with HTML and CSS.
+ <h1>CSD 340 Web Development with HTML and CSS</h1>
+ <h2>Contributors</h2>
+ <ul>
+  <li>Jeremy Ginter</li>
+  <li>John Woods</li>
+ </ul>
