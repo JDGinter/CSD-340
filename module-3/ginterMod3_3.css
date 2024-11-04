@@ -1,0 +1,44 @@
+h1{
+  text-align: center;
+}
+h3{
+  font-weight: 500px;
+}
+ul{
+  font-weight: 300px;
+
+}
+ol{
+  font-weight: 300px;
+}
+#left{
+  width:45%;
+  float:left;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border:1px dotted #ff0000;
+}
+#right{
+  width:45%;
+  float:right;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+   border:1px solid #ff0000;
+}
+#last{
+  width:100%;
+  margin-top:60%;
+  float:right; 
+  margin-bottom: 20px;
+  
+}
+
+a{
+  text-decoration: none;
+    float:right; 
+}
+a:hover{
+  text-decoration: underline;
+}
