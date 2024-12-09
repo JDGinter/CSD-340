@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSD 340 Web Development with HTML and CSS</title>
+        <script>
+            var isImg1 = true;
+            function imgSet1(){
+                if(isImg1 == true){
+                    var img =document.getElementById("img1")
+                    img.src="img2.jpg"
+                    isImg1 = false;
+                }else{
+                    var img =document.getElementById("img1")
+                    img.src="img1.jpg"
+                    isImg1 = true;
+                }
+            }
+
+            function imgSet2Button1(){
+                var img =document.getElementById("img2")
+                img.src="img3.jpg"
+                var radio = document.getElementById("rad2");
+                radio.checked = false;
+
+
+            }
+            function imgSet2Button2(){
+                var img =document.getElementById("img2")
+                img.src="img4.jpg"
+                var radio = document.getElementById("rad1");
+                radio.checked = false;
+            }
+
+        </script>
+
+        
+    </head>
+    <body>
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+        <img id="img1" onclick="imgSet1();" src="img1.jpg">
+        <br/>
+        <p>Click the Image to Switch to the Next!</p>
+        <br/>
+
+        <img id="img2" src="img3.jpg">
+        <p>Select the Image to be Displayed!</p>
+        <br/>
+        <input type="radio" id="rad1" checked onclick="imgSet2Button1();">Image 1</input>
+        <br/>
+        <input type="radio" id="rad2" onclick="imgSet2Button2();">Image 2</input>
+
+
+    </body>
+</html>
