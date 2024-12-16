@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSD 340 Web Development with HTML and CSS</title>
+        <script>
+            let arr = [];
+
+            function add(){
+                let newInput = document.getElementById("text");
+                const inputValue = newInput.value;
+                arr.push(inputValue);
+            }
+            function deleteLast(){
+                arr.pop();
+                display();
+            }
+            function display(){
+                let list = document.getElementById("toDo");
+                toDo.innerHTML= ' ';
+                for(i = 0; i < arr.length; ++i){
+                    let li = document.createElement('li');
+                    li.innerText = arr[i];
+                    list.appendChild(li);
+                }
+            }
+
+
+        </script>
+    </head>   
+    <body>
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+        <p>Enter a To Do List Item Below! Then Click Add to add it to the list. Click Display to see your To Do List! To delete the most recent item you added, click the Delete Button. </p>
+        <input type="text" id="text">
+        <button type="button" id="add" onclick="add();">Add</button>
+        <button type="button" id="delete" onclick="deleteLast();">Delete</button>
+        <button type="button" id="display" onclick="display();">display</button>
+        <br/>
+        <hr>
+        <ul id="toDo"></ul>
+    </body>
+</html>
