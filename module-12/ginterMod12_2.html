@@ -1,0 +1,65 @@
+<!--Jeremy Ginter, Module 12.2 Assignment, 12/22/24-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="ginterMod12_2.css" />
+    <script>
+      const books = ["The Chronicles of Narnia", "Dune", "The Hobbit", "Lord of the Rings: Fellowship of the Ring",
+        "Lord of the Rings: The Two Towers", "Lord of the Rings: Return of the King", "The Martian",
+        "The Hitchhikers Guide to the Galaxy", "The Hunger Games", "Catching Fire"];
+
+        function topDown(){
+          var bookList = document.getElementById('list');
+          bookList.innerHTML = '';
+          revList.innerHTML = '';
+          for(var i = 0; i < books.length; i++){
+            var li = document.createElement('li');
+            li.textContent = books[i];
+            list.appendChild(li); 
+          }
+        }
+
+        function bottomUp(){
+          var bookList = document.getElementById('revList');
+          list.innerHTML = '';
+          revList.innerHTML = '';
+          for(var i = books.length -1 ; i > -1; i--){
+            var li = document.createElement('li');
+            li.textContent = books[i];
+            revList.appendChild(li);
+     
+          }
+        }
+
+
+    </script>
+  </head>
+  <body>
+      <h1>Assignment 3.3: Build a Web Page Exercise - Part 3</h1>
+      <container>
+      <div id="left">
+        <h3>Top 10 Favorite Books</h3>
+        <button type="button" onclick="topDown()">Top to Bottom</button>
+        <button type ="button" onclick="bottomUp()">Bottom to Top</button>
+        <ol id="list"></ol>
+        <ol reversed="true" id="revList"></ol>
+      </div>
+      
+      <div id="right">
+        <h3>5 Things I've Learned Since the Course Started</h3>
+        <ul>
+          <li>Learned how to insert links to other HTML files.</li>
+          <li>Learned how to add color to text.</li>
+          <li>Learned how to add background color</li>
+          <li>Learned how to change text size and font.</li>
+          <li>Learned how to add borders to groups of text.</li>
+        </ul>
+      </div>
+ 
+      <div id="last">
+        <a href="https://jdginter.github.io/CSD-340/">Index Page</a>
+      </div>
+      </container>
+  </body>
+</html>
